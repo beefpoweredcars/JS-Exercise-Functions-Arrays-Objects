@@ -37,8 +37,11 @@ function exampleFunction(num1, num2) {
  *   email: "leia@leia.com",
  * }
 */
-function makePersonObject(/* code here */) {
+function makePersonObject(userId, userName, userEmail) {
   /* code here */
+  id: userId;
+  name: userName;
+  email: userEmail; 
 }
 
 /**
@@ -54,8 +57,8 @@ function makePersonObject(/* code here */) {
  * passing { id: 1, name: 'Leia', email: 'leia@leia.com` } as the argument,
  * the returned value should look like `Hello, my name is Leia`.
 */
-function getName(/* code here */) {
-  /* code here */
+function getName(name) {
+  console.log("Hello, my name is "name);
 }
 
 /**
