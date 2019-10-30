@@ -38,10 +38,12 @@ function exampleFunction(num1, num2) {
  * }
 */
 function makePersonObject(userId, userName, userEmail) {
-  /* code here */
-  id: userId;
-  name: userName;
-  email: userEmail; 
+  const personObject = {
+  id: userId,
+  name: userName,
+  email: userEmail, 
+  }
+  return personObject;
 }
 
 /**
@@ -58,7 +60,7 @@ function makePersonObject(userId, userName, userEmail) {
  * the returned value should look like `Hello, my name is Leia`.
 */
 function getName(name) {
-  console.log("Hello, my name is "name);
+  console.log(`Hello, my name is ${name}`);
 }
 
 /**
