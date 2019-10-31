@@ -77,15 +77,16 @@ function getName(obj) {
  *         where `{name}` is the name passed into `makeSmartPerson`.
 */
 function makeSmartPerson(name) {
-  const something = {
+  const obj = {
       smartName: name,
       sum: function (num1, num2){
         return num1 + num2;
       },
       speak: function (){
-        return `Hello, my name is ${something.name}`
+        return `Hello, my name is ${obj.smartName}`
       }
   }
+  return obj;
 }
 
 /**
