@@ -1,3 +1,4 @@
 {
-  "standard.enable": false
+  "standard.enable": false,
+  "terminal.integrated.shell.windows": "C:\\Git\\bin\\bash.exe"
 }
