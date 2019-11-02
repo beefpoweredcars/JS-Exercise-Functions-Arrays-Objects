@@ -226,20 +226,6 @@ function getGermanCars(array) {
     return germanCars
   }
   
-  // getGermanCars(array)
-  
-
-
-  
-  
-  
-  // const germanCars = []
-  // for (var i=0; i < array.length; i++){
-  //   if (array[i].car_make === "Audi") {
-  //     germanCars.push(array[i])
-  //   }
-  // }
-  // return germanCars
 
 
 /**
@@ -260,9 +246,12 @@ function getGermanCars(array) {
  *   return num * 2
  * }
 */
-const sum = null; // code here!
-const addFive = null; // code here!
-const argTimesTwo = null; // code here!
+// const sum = null;
+const sum = (a,b) => a + b
+const addFive = (num) => num = 5
+const argTimesTwo = (num) => num * 2
+
+// hello = (val) => "Hello " + val;
 
 /**
  * ### Challenge `carMaker`
