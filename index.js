@@ -151,7 +151,6 @@ function getCarInfoById(array, num) {
 */
 function sortCarInventory(array) {
   return array.sort((a, b) => (a.car_model > b.car_model) ? 1 : (a.car_model === b.car_model) ? ((a.size > b.size) ? 1 : -1) : -1 )
-
 }
 
 /**
@@ -163,9 +162,20 @@ function sortCarInventory(array) {
  *     (1) an array which is an inventory of cars like the one inside /data/inventory.js.
  * getModelYears returns an array containing all the 'car_year's in the inventory.
 */
-function getModelYears(/* code here */) {
-  /* code here */
+function getModelYears(cars) {
+  const carYears = []
+  for (var i=0; i < cars.length; i++){
+    carYears.push(cars[i].car_year)
+  }
+  return carYears
 }
+
+// let result = array.map(a => a.car_year);
+// return result
+
+// items.forEach(function(item){
+//   copy.push(item);
+// });
 
 /**
  * ### Challenge `getOlderCars`
@@ -179,9 +189,21 @@ function getModelYears(/* code here */) {
  * with a `car_year` which is at most the given desired max year,
  * in the same order as they appear in the original inventory.
 */
-function getOlderCars(/* code here */) {
-  /* code here */
+function getOlderCars(array, num) {
+    const olderCars = []
+    for (var i=0; i < array.length; i++){
+      if (array[i].car_year <= num){
+        olderCars.push(array[i])
+      }
+      return olderCars
+    }
+
 }
+
+
+
+
+
 
 /**
  * ### Challenge `getGermanCars`
