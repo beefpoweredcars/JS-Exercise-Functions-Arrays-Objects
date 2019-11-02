@@ -195,9 +195,9 @@ function getOlderCars(array, num) {
       if (array[i].car_year <= num){
         olderCars.push(array[i])
       }
-      return olderCars
+      // return olderCars
     }
-
+    return olderCars
 }
 
 
